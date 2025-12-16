@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenyan Tax Matters | Bosire Nyamori</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Theme Colors */
+            --primary-blue: #002e5d; /* Deep Professional Blue */
+            --accent-green: #69be28; /* Vibrant Growth Green */
+            --light-bg: #f8f9fa;
+            --text-dark: #333333;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Merriweather', serif;
+            color: var(--primary-blue);
+        }
+
+        /* Navigation */
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        
+        .navbar-brand {
+            color: var(--primary-blue);
+            font-weight: 700;
+            font-size: 1.5rem;
+            font-family: 'Merriweather', serif;
+        }
+
+        .nav-link {
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-left: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--accent-green);
+        }
+
+        .btn-custom {
+            background-color: var(--accent-green);
+            color: white;
+            border-radius: 0;
+            padding: 10px 25px;
+            font-weight: 600;
+            border: none;
+            transition: background 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #5aa622;
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 46, 93, 0.9), rgba(0, 46, 93, 0.7)), url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero .lead {
+            font-size: 1.3rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        /* Section Styling */
+        .section-padding {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            position: relative;
+            margin-bottom: 60px;
+            padding-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 4px;
+            width: 60px;
+            background-color: var(--accent-green);
+        }
+
+        /* About Section */
+        .profile-img-container {
+            position: relative;
+        }
+        .profile-img-container::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            border: 5px solid var(--accent-green);
+            z-index: -1;
+        }
+
+        /* Publications */
+        .pub-card {
+            border-left: 5px solid var(--accent-green);
+            background: white;
+            margin-bottom: 25px;
+            padding: 25px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .pub-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .pub-title {
+            color: var(--primary-blue);
+            font-weight: 700;
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Speaking Engagements (Timeline Style) */
+        .timeline-wrapper {
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .timeline-item {
+            padding-bottom: 2.5rem;
+            border-left: 2px solid #e9ecef;
+            position: relative;
+            padding-left: 35px;
+        }
+
+        .timeline-item:last-child {
+            border-left: 2px solid transparent;
+        }
+
+        .timeline-item::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            background: var(--accent-green);
+            position: absolute;
+            left: -9px;
+            top: 6px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 1px var(--accent-green);
+        }
+
+        .date-badge {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 4px 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        footer h5 {
+            color: var(--accent-green);
+            margin-bottom: 1.5rem;
+        }
+
+        footer a {
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: var(--accent-green) !important;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-bank2 text-success me-2"></i>Kenyan Tax Matters
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#speaking">Speaking Engagements</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-custom ms-lg-3 text-white" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h1>Kenyan Tax Matters</h1>
+                    <p class="lead mb-4">Examines topical issues relating to tax policy and the law in Kenya</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#about" class="btn btn-custom btn-lg">Read Bio</a>
+                        <a href="#publications" class="btn btn-outline-light btn-lg">View Publications</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="profile-img-container">
+                        <img src="/assets/images/Bosire_Nyamori.jpg" alt="Professional Portrait" class="img-fluid shadow w-100">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="lead"><strong>Bosire Nyamori</strong> is an Advocate of the High Court of Kenya and a Certified Public Accountant, with over two decades of experience spanning academia, tax consulting, and legal practice.</p>
+                    
+                    <p>His professional journey has allowed him to work at the intersection of law, taxation, accounting, and public policy. His core competencies include research, writing and analysis, analytical thinking, problem-solving and communication of complex policy, legal and tax issues.</p>
+                    
+                    <p>His forte is tax policy and law, although he has a continuing interest in budget policy and law, the interaction between law and accounting, and the intersection between taxation, trade and investments.</p>
+                    
+                    <p>He is an active writer and public commentator. He regularly publishes journal articles, op-eds, and case commentaries, and is often invited to speak at professional conferences, judicial seminars, and academic forums in Kenya and abroad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="section-padding bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Publications</h2>
+                    <p class="lead text-muted">A selection of journal articles and academic contributions.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pub-card">
+                        <div class="pub-title">The Legal and Tax Architecture of Collective Investment Funds in Mauritius</div>
+                        <div class="fst-italic text-secondary mb-2">Journal on Financing for Development 1, no.1 (2020)</div>
+                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Authors:</strong> Bosire Nyamori & Mary Ongore</p>
+                    </div>
+
+                    <div class="pub-card">
+                        <div class="pub-title">Kenya’s Experience with Special Economic Zones: Legal and Policy Imperatives</div>
+                        <div class="fst-italic text-secondary mb-2">African Journal of International and Comparative Law 28, no.x (2020)</div>
+                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Authors:</strong> Laryea Emmanuel, Ndonga Dennis and Nyamori Bosire</p>
+                    </div>
+
+                    <div class="pub-card">
+                        <div class="pub-title">Taxation of Co-operatives in Kenya</div>
+                        <div class="fst-italic text-secondary mb-2">Derivatives & Financial Instruments 20, no.1 (2018)</div>
+                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
+                    </div>
+
+                    <div class="pub-card">
+                        <div class="pub-title">Tax Incentives for Venture Capital</div>
+                        <div class="fst-italic text-secondary mb-2">Derivatives & Financial Instruments 19, no.1 (2017)</div>
+                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
+                    </div>
+
+                    <div class="pub-card">
+                        <div class="pub-title">Transfer Pricing Law and Policy in Kenya</div>
+                        <div class="fst-italic text-secondary mb-2">The International Transfer Pricing Journal 19, no 2 (2012): 153-160</div>
+                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="speaking" class="section-padding">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Speaking Engagements, Presentations and Invited Talks</h2>
+                    <p class="lead text-muted">Recent presentations at national and international forums.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10 timeline-wrapper">
+                    
+                    <div class="timeline-item">
+                        <span class="date-badge">3 June 2024</span>
+                        <h5 class="fw-bold">“On International Tax Principles Institute”</h5>
+                        <p class="text-muted mb-0">Presented at 2024 Certified Public Accountants of Kenya Conference, <span class="fst-italic">Whitesands Hotel</span></p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date-badge">23 May 2024</span>
+                        <h5 class="fw-bold">On Finance Bill 2021</h5>
+                        <p class="text-muted mb-0">Law Society of Kenya, CPD</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date-badge">1-3 February 2023</span>
+                        <h5 class="fw-bold">“Judiciary, Audits and Compliance Checks from a Taxpayers’ Perspective”</h5>
+                        <p class="text-muted mb-0">Judges Seminar, Emerging Issues in International Trade and Tax. (Presented at the Diani Beach Reef Hotel, Kwale)</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date-badge">23 November 2022</span>
+                        <h5 class="fw-bold">“On Taxing Software in East Africa: Jurisprudence and Emerging Issues”</h5>
+                        <p class="text-muted mb-0">Presented at the East Africa Law Society Conference, Grand Melia Hotel, Arusha</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date-badge">3 November 2022</span>
+                        <h5 class="fw-bold">“On Tax Trends in Africa and their Impact on African businesses”</h5>
+                        <p class="text-muted mb-0">Presented at the 10th Annual Tax Convention, Institute of Certified Public Accountants, Whitesands Hotel (with Omolo Erastus)</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date-badge">18-21 October 2022</span>
+                        <h5 class="fw-bold">Presentation at 25th Session of the Committee of Experts on International Cooperation in Tax Matters</h5>
+                        <p class="text-muted mb-0">Geneva, Switzerland</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date-badge">2 September 2022</span>
+                        <h5 class="fw-bold">“On the Taxation, Trust and Norms: Stakeholders’ Perspectives- The Tax Appeals Tribunal of Kenya”</h5>
+                        <p class="text-muted mb-0">Presented at Chr. Michelsen Institute, Bergen, Norway</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date-badge">4-7 April and 11-12 April 2022</span>
+                        <h5 class="fw-bold">24th Session of the UN Committee of Expert on International Cooperation in Tax Matters</h5>
+                        <p class="text-muted mb-0">Virtual Informal Meeting</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date-badge">1 March 2022</span>
+                        <h5 class="fw-bold">“On the African Centre for tax and Governance, Overview of Domestic Resource Mobilization in Africa (Challenges and Prospects)”</h5>
+                        <p class="text-muted mb-0">Presented at the Park Inn by Radisson, Westlands Nairobi</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date-badge">2 February 2022</span>
+                        <h5 class="fw-bold">“On the Taxation of Software Payments as Royalties”</h5>
+                        <p class="text-muted mb-0">Presented during the Closed Technical Briefings for UN Tax Committee Members, South Centre</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date-badge">November 2021</span>
+                        <h5 class="fw-bold">International Fiscal Association, Annual Congress</h5>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date-badge">November 2020</span>
+                        <h5 class="fw-bold">International Fiscal Association, Annual Congress</h5>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date-badge">February 2020</span>
+                        <h5 class="fw-bold">Briefing on Kenya-Netherlands DTA</h5>
+                        <p class="text-muted mb-0">The Netherlands Embassy, Dutch Embassy</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date-badge">November 2019</span>
+                        <h5 class="fw-bold">Taxation of Collective Investment Vehicles</h5>
+                        <p class="text-muted mb-0">Roundtable for Developing Countries, South Centre</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date-badge">26-27 April 2018</span>
+                        <h5 class="fw-bold">Tax Treaties Seminar</h5>
+                        <p class="text-muted mb-0">Strathmore University</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mb-4">
+                    <h5 class="mb-3">Kenyan Tax Matters</h5>
+                    <p class="small text-white-50">Examining topical issues relating to tax policy and the law in Kenya. <br><br> Content by Bosire Nyamori.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#about" class="text-white-50 text-decoration-none">About Me</a></li>
+                        <li class="mb-2"><a href="#publications" class="text-white-50 text-decoration-none">Publications</a></li>
+                        <li class="mb-2"><a href="#speaking" class="text-white-50 text-decoration-none">Speaking Engagements</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Contact Info</h5>
+                    <p class="text-white-50"><i class="bi bi-geo-alt me-2"></i> Nairobi, Kenya</p>
+                    <p class="text-white-50"><i class="bi bi-envelope me-2"></i> contact@kenyataxlaw.com</p>
+                </div>
+            </div>
+            <div class="row mt-4 border-top border-secondary pt-4">
+                <div class="col-12 text-center text-white-50 small">
+                    &copy; 2025 Bosire Nyamori. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
