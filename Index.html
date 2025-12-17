@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenya Tax Law</title>
+    <title>Kenya Tax Law | Bosire Nyamori</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -45,8 +45,9 @@
         .nav-link {
             color: var(--primary-blue);
             font-weight: 600;
-            margin-left: 1rem;
+            margin-left: 0.8rem;
             transition: color 0.3s;
+            font-size: 0.95rem;
         }
 
         .nav-link:hover, .nav-link.active {
@@ -127,7 +128,7 @@
             z-index: -1;
         }
 
-        /* Publications */
+        /* Publications & Media Cards */
         .pub-card {
             border-left: 5px solid var(--accent-green);
             background: white;
@@ -135,6 +136,7 @@
             padding: 25px;
             transition: transform 0.2s, box-shadow 0.2s;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            height: 100%;
         }
 
         .pub-card:hover {
@@ -147,6 +149,30 @@
             font-weight: 700;
             font-size: 1.15rem;
             margin-bottom: 0.5rem;
+        }
+
+        /* Consulting Features */
+        .consulting-icon {
+            font-size: 2.5rem;
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+        }
+        
+        /* Blog Style */
+        .blog-card {
+            border: none;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .blog-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .blog-date {
+            color: var(--accent-green);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         /* Speaking Engagements (Timeline Style) */
@@ -228,6 +254,9 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
                     <li class="nav-item"><a class="nav-link" href="#speaking">Speaking Engagements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#media">Media</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#consulting">Legal and Tax Consulting</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                     <li class="nav-item"><a class="nav-link btn btn-custom ms-lg-3 text-white" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -242,7 +271,7 @@
                     <p class="lead mb-4">Examines topical issues relating to tax policy and the law in Kenya</p>
                     <div class="d-flex justify-content-center gap-3">
                         <a href="#about" class="btn btn-custom btn-lg">Read Bio</a>
-                        <a href="#publications" class="btn btn-outline-light btn-lg">View Publications</a>
+                        <a href="#consulting" class="btn btn-outline-light btn-lg">Services</a>
                     </div>
                 </div>
             </div>
@@ -260,11 +289,8 @@
                 <div class="col-lg-7">
                     <h2 class="section-title">About Me</h2>
                     <p class="lead"><strong>Bosire Nyamori</strong> is an Advocate of the High Court of Kenya and a Certified Public Accountant, with over two decades of experience spanning academia, tax consulting, and legal practice.</p>
-                    
                     <p>His professional journey has allowed him to work at the intersection of law, taxation, accounting, and public policy. His core competencies include research, writing and analysis, analytical thinking, problem-solving and communication of complex policy, legal and tax issues.</p>
-                    
                     <p>His forte is tax policy and law, although he has a continuing interest in budget policy and law, the interaction between law and accounting, and the intersection between taxation, trade and investments.</p>
-                    
                     <p>He is an active writer and public commentator. He regularly publishes journal articles, op-eds, and case commentaries, and is often invited to speak at professional conferences, judicial seminars, and academic forums in Kenya and abroad.</p>
                 </div>
             </div>
@@ -272,217 +298,253 @@
     </section>
 
     <section id="publications" class="section-padding bg-light">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-lg-8">
-                    <h2 class="section-title">Publications</h2>
-                    <p class="lead text-muted">A selection of journal articles and academic contributions.</p>
-                </div>
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-8">
+                <h2 class="section-title">Publications</h2>
+                <p class="lead text-muted">A comprehensive list of journal articles, reports, and op-eds.</p>
             </div>
-
-            <div class="row">
-                <div class="col-lg-12">
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="mb-4 text-primary" style="font-family: 'Merriweather', serif;">2.1 Journal Articles</h3>
+                <div class="mb-5">
                     <div class="pub-card">
                         <div class="pub-title">The Legal and Tax Architecture of Collective Investment Funds in Mauritius</div>
                         <div class="fst-italic text-secondary mb-2">Journal on Financing for Development 1, no.1 (2020)</div>
                         <p class="mb-0 small text-uppercase tracking-wide"><strong>Authors:</strong> Bosire Nyamori & Mary Ongore</p>
                     </div>
-
                     <div class="pub-card">
                         <div class="pub-title">Kenya’s Experience with Special Economic Zones: Legal and Policy Imperatives</div>
                         <div class="fst-italic text-secondary mb-2">African Journal of International and Comparative Law 28, no.x (2020)</div>
                         <p class="mb-0 small text-uppercase tracking-wide"><strong>Authors:</strong> Laryea Emmanuel, Ndonga Dennis and Nyamori Bosire</p>
                     </div>
-
                     <div class="pub-card">
                         <div class="pub-title">Taxation of Co-operatives in Kenya</div>
                         <div class="fst-italic text-secondary mb-2">Derivatives & Financial Instruments 20, no.1 (2018)</div>
                         <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
                     </div>
-
                     <div class="pub-card">
                         <div class="pub-title">Tax Incentives for Venture Capital</div>
                         <div class="fst-italic text-secondary mb-2">Derivatives & Financial Instruments 19, no.1 (2017)</div>
                         <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
                     </div>
-
                     <div class="pub-card">
                         <div class="pub-title">Transfer Pricing Law and Policy in Kenya</div>
                         <div class="fst-italic text-secondary mb-2">The International Transfer Pricing Journal 19, no 2 (2012): 153-160</div>
                         <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
                     </div>
                 </div>
+
+                <h3 class="mb-4 text-primary" style="font-family: 'Merriweather', serif;">2.2 Reports, Policy Documents and Submissions</h3>
+                <div class="mb-5">
+                    <div class="pub-card">
+                        <div class="pub-title">Comments on the proposed Kenya–Ireland Double Taxation Agreement</div>
+                        <div class="fst-italic text-secondary mb-2">National Treasury, Kenya, 2021</div>
+                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Authors:</strong> Piccioto Sol and Bosire Nyamori</p>
+                    </div>
+                    <div class="pub-card">
+                        <div class="pub-title">Comments on Public Discussion Draft: Possible Changes to the UN Model Double Taxation Convention between Developed and Developing Countries Concerning Inclusion of Software Payments in the Definition of Royalties</div>
+                        <div class="fst-italic text-secondary mb-2">UN Committee of Experts on International Cooperation on Tax Matters, 2020</div>
+                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Bosire Nyamori</p>
+                    </div>
+                </div>
+
+                <h3 class="mb-4 text-primary" style="font-family: 'Merriweather', serif;">2.3 Op-eds and Others</h3>
+                <div class="mb-5">
+                    <div class="pub-card">
+                        <div class="pub-title">How the Constitution Impacts International Tax Policy and Law in Kenya</div>
+                        <div class="fst-italic text-secondary mb-2">SKJULT, Tax Justice Norge, 78-79</div>
+                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Bosire Nyamori</p>
+                    </div>
+                    <div class="pub-card">
+                        <div class="pub-title">The Kenyan Parliament and Investment Treaty Making</div>
+                        <div class="fst-italic text-secondary mb-2">Investment Treaty News 10, no. 2 (2019): 21-23</div>
+                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
+                    </div>
+                    <div class="pub-card">
+                        <div class="pub-title">Crystallising Withholding Tax Liability</div>
+                        <div class="fst-italic text-secondary mb-2">Nairobi Business Monthly, July 5, 2019</div>
+                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
+                    </div>
+                    <div class="pub-card">
+                        <div class="pub-title">Does Location Where Service is to be Finally Used Determine whether It Has Been Exported?</div>
+                        <div class="fst-italic text-secondary mb-2">Nairobi Business Monthly, (2019)</div>
+                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
+                    </div>
+                    <div class="pub-card">
+                        <div class="pub-title">Is VAT Applicable to the Sale or Purchase of Land with Commercial Buildings Standing Thereon?</div>
+                        <div class="fst-italic text-secondary mb-2">Nairobi Business Monthly, (2019)</div>
+                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
+                    </div>
+                    <div class="pub-card">
+                        <div class="pub-title">Implications of the Tax Procedure Act for Taxpayers’ Rights in Kenya</div>
+                        <div class="fst-italic text-secondary mb-2">The Platform 28, (2017): 54-56</div>
+                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
+                    </div>
+                    <div class="pub-card">
+                        <div class="pub-title">Amend the Law to Impose Tax on Income from Illegal Activities</div>
+                        <div class="fst-italic text-secondary mb-2">Business Daily Newspaper, (2016)</div>
+                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Authors:</strong> Nyamori, Robert and Bosire Nyamori</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
     </section>
 
     <section id="speaking" class="section-padding">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-lg-8">
-                    <h2 class="section-title">Speaking Engagements, Presentations and Invited Talks</h2>
+                    <h2 class="section-title">Speaking Engagements</h2>
                     <p class="lead text-muted">Recent presentations at national and international forums.</p>
                 </div>
             </div>
-
             <div class="row justify-content-center">
                 <div class="col-lg-10 timeline-wrapper">
-                    
-                    <div class="timeline-item">
-                        <span class="date-badge">3 June 2024</span>
-                        <h5 class="fw-bold">“On International Tax Principles Institute”</h5>
-                        <p class="text-muted mb-0">Presented at 2024 Certified Public Accountants of Kenya Conference, <span class="fst-italic">Whitesands Hotel</span></p>
-                    </div>
+                    <div class="timeline-item"><span class="date-badge">3 June 2024</span><h5 class="fw-bold">“On International Tax Principles Institute”</h5><p class="text-muted mb-0">Presented at 2024 Certified Public Accountants of Kenya Conference, <span class="fst-italic">Whitesands Hotel</span></p></div>
+                    <div class="timeline-item"><span class="date-badge">23 May 2024</span><h5 class="fw-bold">On Finance Bill 2021</h5><p class="text-muted mb-0">Law Society of Kenya, CPD</p></div>
+                    <div class="timeline-item"><span class="date-badge">1-3 February 2023</span><h5 class="fw-bold">“Judiciary, Audits and Compliance Checks from a Taxpayers’ Perspective”</h5><p class="text-muted mb-0">Judges Seminar, Emerging Issues in International Trade and Tax. (Presented at the Diani Beach Reef Hotel, Kwale)</p></div>
+                    <div class="timeline-item"><span class="date-badge">23 November 2022</span><h5 class="fw-bold">“On Taxing Software in East Africa: Jurisprudence and Emerging Issues”</h5><p class="text-muted mb-0">Presented at the East Africa Law Society Conference, Grand Melia Hotel, Arusha</p></div>
+                    <div class="timeline-item"><span class="date-badge">3 November 2022</span><h5 class="fw-bold">“On Tax Trends in Africa and their Impact on African businesses”</h5><p class="text-muted mb-0">Presented at the 10th Annual Tax Convention, Institute of Certified Public Accountants, Whitesands Hotel (with Omolo Erastus)</p></div>
+                    <div class="timeline-item"><span class="date-badge">18-21 October 2022</span><h5 class="fw-bold">Presentation at 25th Session of the Committee of Experts on International Cooperation in Tax Matters</h5><p class="text-muted mb-0">Geneva, Switzerland</p></div>
+                    <div class="timeline-item"><span class="date-badge">2 September 2022</span><h5 class="fw-bold">“On the Taxation, Trust and Norms: Stakeholders’ Perspectives- The Tax Appeals Tribunal of Kenya”</h5><p class="text-muted mb-0">Presented at Chr. Michelsen Institute, Bergen, Norway</p></div>
+                    <div class="timeline-item"><span class="date-badge">4-7 April and 11-12 April 2022</span><h5 class="fw-bold">24th Session of the UN Committee of Expert on International Cooperation in Tax Matters</h5><p class="text-muted mb-0">Virtual Informal Meeting</p></div>
+                    <div class="timeline-item"><span class="date-badge">1 March 2022</span><h5 class="fw-bold">“On the African Centre for tax and Governance, Overview of Domestic Resource Mobilization in Africa (Challenges and Prospects)”</h5><p class="text-muted mb-0">Presented at the Park Inn by Radisson, Westlands Nairobi</p></div>
+                    <div class="timeline-item"><span class="date-badge">2 February 2022</span><h5 class="fw-bold">“On the Taxation of Software Payments as Royalties”</h5><p class="text-muted mb-0">Presented during the Closed Technical Briefings for UN Tax Committee Members, South Centre</p></div>
+                    <div class="timeline-item"><span class="date-badge">November 2021</span><h5 class="fw-bold">International Fiscal Association, Annual Congress</h5></div>
+                    <div class="timeline-item"><span class="date-badge">November 2020</span><h5 class="fw-bold">International Fiscal Association, Annual Congress</h5></div>
+                    <div class="timeline-item"><span class="date-badge">February 2020</span><h5 class="fw-bold">Briefing on Kenya-Netherlands DTA</h5><p class="text-muted mb-0">The Netherlands Embassy, Dutch Embassy</p></div>
+                    <div class="timeline-item"><span class="date-badge">November 2019</span><h5 class="fw-bold">Taxation of Collective Investment Vehicles</h5><p class="text-muted mb-0">Roundtable for Developing Countries, South Centre</p></div>
+                    <div class="timeline-item"><span class="date-badge">April 10, 2019</span><h5 class="fw-bold">“Crystallising Withholding Tax Liability.”</h5><p class="text-muted mb-0">Nairobi Business Monthly</p></div>
+                    <div class="timeline-item"><span class="date-badge">April 10, 2019</span><h5 class="fw-bold">“Does Location where Service is to be Finally used Determine Whether it has Been Exported?"</h5><p class="text-muted mb-0">Nairobi Business Monthly</p></div>
+                    <div class="timeline-item"><span class="date-badge">April 10, 2019</span><h5 class="fw-bold">“Is VAT Applicable to the Sale or Purchase of Land with Commercial Buildings Standing Thereon?"</h5><p class="text-muted mb-0">Nairobi Business Monthly</p></div>
+                    <div class="timeline-item"><span class="date-badge">26-27 April 2018</span><h5 class="fw-bold">Tax Treaties Seminar</h5><p class="text-muted mb-0">Strathmore University</p></div>
+                    <div class="timeline-item"><span class="date-badge">August 2016</span><h5 class="fw-bold">Using Taxation as an Adjunct to the Anti-corruption Laws in Kenya: Motivations, Problems and Reforms</h5><p class="text-muted mb-0">Presented at the Law Society of Kenya Annual Conference</p></div>
+                    <div class="timeline-item"><span class="date-badge">27-30 June 2016</span><h5 class="fw-bold">On a Sustainable Path for Tax Transparency in Developing Countries</h5><p class="text-muted mb-0">Presented at the University of Oslo</p></div>
+                    <div class="timeline-item"><span class="date-badge">18 January 2016</span><h5 class="fw-bold">A Study of the Experiences of Kenya with Special Economic Zone (SEZ): Imperatives of Law and Economics</h5><p class="text-muted mb-0">University of Nairobi</p></div>
+                    <div class="timeline-item"><span class="date-badge">10-12 September 2013</span><h5 class="fw-bold"><i>Tax Harmonisation in East Africa</i></h5><p class="text-muted mb-0">Presented at Strathmore International Tax Law Conference</p></div>
+                    <div class="timeline-item"><span class="date-badge">August 23, 2011</span><h5 class="fw-bold"><i>Public Financial Management under Kenya’s Constitution.</i></h5><p class="text-muted mb-0">Presented at the national tax conference on Kenya, East Africa Tax and Governance Network, KICC</p></div>
+                    <div class="timeline-item"><span class="date-badge">August 23, 2011</span><h5 class="fw-bold"><i>Harmful Tax Practices,</i> Relay Training for Journalists on Taxation</h5><p class="text-muted mb-0">Presented at Sopa Lodge, Naivasha</p></div>
+                    <div class="timeline-item"><span class="date-badge">September 14-15, 2010</span><h5 class="fw-bold"><i>Transfer Pricing Policy and Law in Africa</i></h5><p class="text-muted mb-0">Paper presented at the Southern Africa Tax Policy Roundtable, Johannesburg, South Africa</p></div>
+                    <div class="timeline-item"><span class="date-badge">January 26-28, 2005</span><h5 class="fw-bold"><i>Taxation as a possible anti-corruption strategy in Kenya</i></h5><p class="text-muted mb-0">Paper presented at the Australasian Tax Teachers Association. Wellington, New Zealand.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="timeline-item">
-                        <span class="date-badge">23 May 2024</span>
-                        <h5 class="fw-bold">On Finance Bill 2021</h5>
-                        <p class="text-muted mb-0">Law Society of Kenya, CPD</p>
+    <section id="media" class="section-padding bg-light">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-10">
+                    <h2 class="section-title">News and Media</h2>
+                    <p class="lead text-muted">Views on tax law and policy in public media.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="mb-5">Besides my other engagements, the media occasionally reaches out to me for views on tax law and policy. I’m pleased to be contacted by and quoted in the media on topical tax issues. Here is a sample of my appearances in the media:</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="pub-card h-100">
+                        <div class="text-muted mb-2 text-uppercase small fw-bold">23 July 2016</div>
+                        <h5 class="pub-title">Lecturer Wants Proceeds from Illegal Business Taxed</h5>
+                        <p class="mb-0 text-muted">Quoted by David Mwere in <span class="fw-bold text-dark">The Nairobi Star</span></p>
                     </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">1-3 February 2023</span>
-                        <h5 class="fw-bold">“Judiciary, Audits and Compliance Checks from a Taxpayers’ Perspective”</h5>
-                        <p class="text-muted mb-0">Judges Seminar, Emerging Issues in International Trade and Tax. (Presented at the Diani Beach Reef Hotel, Kwale)</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="pub-card h-100">
+                        <div class="text-muted mb-2 text-uppercase small fw-bold">22 June 2013</div>
+                        <h5 class="pub-title">Charging the Mobile</h5>
+                        <p class="mb-0 text-muted">Featured commentary in <span class="fw-bold text-dark">The Economist</span></p>
                     </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">23 November 2022</span>
-                        <h5 class="fw-bold">“On Taxing Software in East Africa: Jurisprudence and Emerging Issues”</h5>
-                        <p class="text-muted mb-0">Presented at the East Africa Law Society Conference, Grand Melia Hotel, Arusha</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="pub-card h-100">
+                        <div class="text-muted mb-2 text-uppercase small fw-bold">Business Commentary</div>
+                        <h5 class="pub-title">Expert Commentary on Tax Policy</h5>
+                        <p class="mb-0 text-muted">Various contributions and mentions in <span class="fw-bold text-dark">Forbes</span></p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="timeline-item">
-                        <span class="date-badge">3 November 2022</span>
-                        <h5 class="fw-bold">“On Tax Trends in Africa and their Impact on African businesses”</h5>
-                        <p class="text-muted mb-0">Presented at the 10th Annual Tax Convention, Institute of Certified Public Accountants, Whitesands Hotel (with Omolo Erastus)</p>
+    <section id="consulting" class="section-padding">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Legal and Tax Consulting</h2>
+                    <p class="lead text-muted">Expert advisory services bridging the gap between law, accounting, and public policy.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="p-4 h-100 border rounded-3 hover-shadow">
+                        <i class="bi bi-file-earmark-text consulting-icon"></i>
+                        <h5 class="fw-bold mt-3">Tax Policy Advisory</h5>
+                        <p class="small text-muted">Analysis of fiscal legislation and policy formulation for government bodies and private stakeholders.</p>
                     </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">18-21 October 2022</span>
-                        <h5 class="fw-bold">Presentation at 25th Session of the Committee of Experts on International Cooperation in Tax Matters</h5>
-                        <p class="text-muted mb-0">Geneva, Switzerland</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="p-4 h-100 border rounded-3 hover-shadow">
+                        <i class="bi bi-bank consulting-icon"></i>
+                        <h5 class="fw-bold mt-3">Legislative Drafting</h5>
+                        <p class="small text-muted">Technical support in drafting tax bills and reviewing finance acts for constitutional compliance.</p>
                     </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">2 September 2022</span>
-                        <h5 class="fw-bold">“On the Taxation, Trust and Norms: Stakeholders’ Perspectives- The Tax Appeals Tribunal of Kenya”</h5>
-                        <p class="text-muted mb-0">Presented at Chr. Michelsen Institute, Bergen, Norway</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="p-4 h-100 border rounded-3 hover-shadow">
+                        <i class="bi bi-people consulting-icon"></i>
+                        <h5 class="fw-bold mt-3">Corporate Training</h5>
+                        <p class="small text-muted">Specialized training for boards and management on emerging tax trends and compliance.</p>
                     </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">4-7 April and 11-12 April 2022</span>
-                        <h5 class="fw-bold">24th Session of the UN Committee of Expert on International Cooperation in Tax Matters</h5>
-                        <p class="text-muted mb-0">Virtual Informal Meeting</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="p-4 h-100 border rounded-3 hover-shadow">
+                        <i class="bi bi-shield-check consulting-icon"></i>
+                        <h5 class="fw-bold mt-3">Dispute Resolution</h5>
+                        <p class="small text-muted">Expert opinion and litigation support for complex tax disputes and tribunal hearings.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="timeline-item">
-                        <span class="date-badge">1 March 2022</span>
-                        <h5 class="fw-bold">“On the African Centre for tax and Governance, Overview of Domestic Resource Mobilization in Africa (Challenges and Prospects)”</h5>
-                        <p class="text-muted mb-0">Presented at the Park Inn by Radisson, Westlands Nairobi</p>
+    <section id="blog" class="section-padding bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Blog</h2>
+                    <p class="lead text-muted">Commentary on developments in taxation, commercial and corporate law.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card blog-card p-4 mb-4 shadow-sm">
+                        <div class="card-body">
+                            <span class="blog-date">Recent Analysis</span>
+                            <h3 class="card-title fw-bold mt-2 mb-3 text-primary">VAT and Agriculture in Kenya: Recent Legal Changes</h3>
+                            <p class="card-text text-muted">An in-depth look at how recent Value Added Tax amendments impact the agricultural sector, presented at the Netherlands Embassy in Nairobi.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm mt-2">Read Full Article</a>
+                        </div>
                     </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">2 February 2022</span>
-                        <h5 class="fw-bold">“On the Taxation of Software Payments as Royalties”</h5>
-                        <p class="text-muted mb-0">Presented during the Closed Technical Briefings for UN Tax Committee Members, South Centre</p>
+                    <div class="alert alert-light border-start border-success border-4 mt-5" role="alert">
+                        <h5 class="alert-heading text-success"><i class="bi bi-envelope-check me-2"></i>Stay Updated</h5>
+                        <p class="small mb-0">In compliance with Kenya’s Data Protection Act, we require your express consent to receive our electronic communications. Contact us to be added to our mailing list.</p>
                     </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">November 2021</span>
-                        <h5 class="fw-bold">International Fiscal Association, Annual Congress</h5>
+                </div>
+                <div class="col-lg-4">
+                    <div class="p-4 bg-white shadow-sm rounded">
+                        <h5 class="fw-bold mb-3">Categories</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-muted"><i class="bi bi-chevron-right text-success small"></i> Taxation Law</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-muted"><i class="bi bi-chevron-right text-success small"></i> Corporate Governance</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-muted"><i class="bi bi-chevron-right text-success small"></i> Commercial Law</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-muted"><i class="bi bi-chevron-right text-success small"></i> Public Finance</a></li>
+                        </ul>
                     </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">November 2020</span>
-                        <h5 class="fw-bold">International Fiscal Association, Annual Congress</h5>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">February 2020</span>
-                        <h5 class="fw-bold">Briefing on Kenya-Netherlands DTA</h5>
-                        <p class="text-muted mb-0">The Netherlands Embassy, Dutch Embassy</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">November 2019</span>
-                        <h5 class="fw-bold">Taxation of Collective Investment Vehicles</h5>
-                        <p class="text-muted mb-0">Roundtable for Developing Countries, South Centre</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">April 10, 2019</span>
-                        <h5 class="fw-bold">“Crystallising Withholding Tax Liability.”</h5>
-                        <p class="text-muted mb-0">Nairobi Business Monthly</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">April 10, 2019</span>
-                        <h5 class="fw-bold">“Does Location where Service is to be Finally used Determine Whether it has Been Exported?"</h5>
-                        <p class="text-muted mb-0">Nairobi Business Monthly</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">April 10, 2019</span>
-                        <h5 class="fw-bold">“Is VAT Applicable to the Sale or Purchase of Land with Commercial Buildings Standing Thereon?"</h5>
-                        <p class="text-muted mb-0">Nairobi Business Monthly</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">26-27 April 2018</span>
-                        <h5 class="fw-bold">Tax Treaties Seminar</h5>
-                        <p class="text-muted mb-0">Strathmore University</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">August 2016</span>
-                        <h5 class="fw-bold">Using Taxation as an Adjunct to the Anti-corruption Laws in Kenya: Motivations, Problems and Reforms</h5>
-                        <p class="text-muted mb-0">Presented at the Law Society of Kenya Annual Conference</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">27-30 June 2016</span>
-                        <h5 class="fw-bold">On a Sustainable Path for Tax Transparency in Developing Countries</h5>
-                        <p class="text-muted mb-0">Presented at the University of Oslo</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">18 January 2016</span>
-                        <h5 class="fw-bold">A Study of the Experiences of Kenya with Special Economic Zone (SEZ): Imperatives of Law and Economics</h5>
-                        <p class="text-muted mb-0">University of Nairobi</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">10-12 September 2013</span>
-                        <h5 class="fw-bold"><i>Tax Harmonisation in East Africa</i></h5>
-                        <p class="text-muted mb-0">Presented at Strathmore International Tax Law Conference</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">August 23, 2011</span>
-                        <h5 class="fw-bold"><i>Public Financial Management under Kenya’s Constitution.</i></h5>
-                        <p class="text-muted mb-0">Presented at the national tax conference on Kenya, East Africa Tax and Governance Network, KICC</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">August 23, 2011</span>
-                        <h5 class="fw-bold"><i>Harmful Tax Practices,</i> Relay Training for Journalists on Taxation</h5>
-                        <p class="text-muted mb-0">Presented at Sopa Lodge, Naivasha</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">September 14-15, 2010</span>
-                        <h5 class="fw-bold"><i>Transfer Pricing Policy and Law in Africa</i></h5>
-                        <p class="text-muted mb-0">Paper presented at the Southern Africa Tax Policy Roundtable, Johannesburg, South Africa</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="date-badge">January 26-28, 2005</span>
-                        <h5 class="fw-bold"><i>Taxation as a possible anti-corruption strategy in Kenya</i></h5>
-                        <p class="text-muted mb-0">Paper presented at the Australasian Tax Teachers Association. Wellington, New Zealand.</p>
-                    </div>
-
-                    
                 </div>
             </div>
         </div>
@@ -500,7 +562,8 @@
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="#about" class="text-white-50 text-decoration-none">About Me</a></li>
                         <li class="mb-2"><a href="#publications" class="text-white-50 text-decoration-none">Publications</a></li>
-                        <li class="mb-2"><a href="#speaking" class="text-white-50 text-decoration-none">Speaking Engagements</a></li>
+                        <li class="mb-2"><a href="#media" class="text-white-50 text-decoration-none">Media</a></li>
+                        <li class="mb-2"><a href="#consulting" class="text-white-50 text-decoration-none">Consulting</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-4">
