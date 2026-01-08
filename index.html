@@ -13,7 +13,7 @@
     <meta name="author" content="Bosire Nyamori">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="justice-149209_1920.png" type="image/x-icon">
     
@@ -149,8 +149,8 @@
         .pub-card {
             border-left: 5px solid var(--accent-green);
             background: white;
-            margin-bottom: 25px;
-            padding: 25px;
+            margin-bottom: 20px;
+            padding: 20px;
             transition: transform 0.2s, box-shadow 0.2s;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             height: 100%;
@@ -199,7 +199,7 @@
             letter-spacing: 1px;
         }
 
-        /* Speaking Engagements (Timeline Style) */
+        /* Speaking Engagements*/
         .timeline-wrapper {
             position: relative;
             padding-left: 20px;
@@ -257,13 +257,13 @@
         footer a {
             transition: color 0.3s;
         }
-        footer a:hover {
+        footer a:hover, footer a:hover i {
             color: var(--accent-green) !important;
+            transition: color 0.3s ease;
         }
 
         /* --- MOBILE OPTIMIZATION --- */
         @media (max-width: 768px) {
-            /* Adjust Hero for smaller screens */
             .hero {
                 padding: 80px 0;
             }
@@ -273,8 +273,6 @@
             .hero .lead {
                 font-size: 1.1rem;
             }
-
-            /* Adjust spacing on sections */
             .section-padding {
                 padding: 60px 0;
             }
@@ -282,21 +280,15 @@
                 margin-bottom: 40px;
                 font-size: 1.75rem;
             }
-
-            /* Fix Profile Image box on mobile */
             .profile-img-container {
                 margin-bottom: 40px;
             }
-            
-            /* Adjust Timeline padding for small screens */
             .timeline-wrapper {
                 padding-left: 0;
             }
             .timeline-item {
                 padding-left: 25px;
             }
-            
-            /* Navbar adjustments */
             .navbar-brand {
                 font-size: 1.2rem;
             }
@@ -314,6 +306,11 @@
                 margin-left: 0 !important;
                 margin-top: 15px;
                 width: 100%;
+            }
+            /* Stack footer items nicely on mobile */
+            footer .d-flex {
+                flex-direction: column;
+                text-align: center;
             }
         }
     </style>
@@ -349,7 +346,6 @@
                     <p class="lead mb-4">Examines topical issues relating to tax policy and the law in Kenya</p>
                     <div class="d-flex justify-content-center gap-3">
                         <a href="#about" class="btn btn-custom btn-lg">Read Bio</a>
-                        <a href="#consulting" class="btn btn-outline-light btn-lg">Services</a>
                     </div>
                 </div>
             </div>
@@ -366,8 +362,9 @@
                 </div>
                 <div class="col-lg-7">
                     <h2 class="section-title">About Me</h2>
-                    <p class="lead"><strong>Bosire Nyamori</strong> is an Advocate of the High Court of Kenya and a Certified Public Accountant, with over two decades of experience spanning academia, tax consulting, and legal practice.</p>
-                    <p>His professional journey has allowed him to work at the intersection of law, taxation, accounting, and public policy. His core competencies include research, writing and analysis, analytical thinking, problem-solving and communication of complex policy, legal and tax issues.</p>
+                    <p>Bosire Nyamori is an Advocate of the High Court of Kenya and a Certified Public Accountant, with over 25 years of experience spanning academia, tax consulting, and legal practice.
+                    His professional journey has allowed him to work at the intersection of law, taxation, accounting, and public policy.</p>
+                    <p>His core competencies include research, writing and analysis, analytical thinking, problem-solving and communication of complex policy, legal and tax issues.</p>
                     <p>His forte is tax policy and law, although he has a continuing interest in budget policy and law, the interaction between law and accounting, and the intersection between taxation, trade and investments.</p>
                     <p>He is an active writer and public commentator. He regularly publishes journal articles, op-eds, and case commentaries, and is often invited to speak at professional conferences, judicial seminars, and academic forums in Kenya and abroad.</p>
                     <br>
@@ -396,7 +393,7 @@
                     <div class="pub-card">
                         <div class="pub-title">“Assessment of Effectiveness of the Kenyan Public Accounts Committee.”</div>
                         <div class="fst-italic text-secondary mb-2">In Making Governments Accountable: The Role of Public Accounts Committees and National Audit Offices, edited by Zahirul Hoque, 275–292. United Kingdom: Taylor & Francis Ltd, 2015.</div>
-                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Authors:</strong> Nyamori, Robert, and Bosire Nyamori</p>
+                        <p><strong>Authors:</strong> Nyamori, Robert, and Bosire Nyamori</p>
                     </div>
                 </div>
 
@@ -405,27 +402,27 @@
                     <div class="pub-card">
                         <div class="pub-title">The Legal and Tax Architecture of Collective Investment Funds in Mauritius</div>
                         <div class="fst-italic text-secondary mb-2">Journal on Financing for Development 1, no.1 (2020)</div>
-                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Authors:</strong> Bosire Nyamori & Mary Ongore</p>
+                        <p><strong>Authors:</strong> Nyamori, Bosire, and Mary Ongore</p>
                     </div>
                     <div class="pub-card">
                         <div class="pub-title">Kenya’s Experience with Special Economic Zones: Legal and Policy Imperatives</div>
                         <div class="fst-italic text-secondary mb-2">African Journal of International and Comparative Law 28, no.x (2020)</div>
-                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Authors:</strong> Laryea Emmanuel, Ndonga Dennis and Nyamori Bosire</p>
+                        <p><strong>Authors:</strong> Laryea, Emmanuel,Dennis Ndonga and Nyamori Bosire</p>
                     </div>
                     <div class="pub-card">
                         <div class="pub-title">Taxation of Co-operatives in Kenya</div>
                         <div class="fst-italic text-secondary mb-2">Derivatives & Financial Instruments 20, no.1 (2018)</div>
-                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
+                        <p><strong>Author:</strong> Nyamori, Bosire</p>
                     </div>
                     <div class="pub-card">
                         <div class="pub-title">Tax Incentives for Venture Capital</div>
                         <div class="fst-italic text-secondary mb-2">Derivatives & Financial Instruments 19, no.1 (2017)</div>
-                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
+                        <p><strong>Author:</strong> Nyamori, Bosire</p>
                     </div>
                     <div class="pub-card">
                         <div class="pub-title">Transfer Pricing Law and Policy in Kenya</div>
                         <div class="fst-italic text-secondary mb-2">The International Transfer Pricing Journal 19, no 2 (2012): 153-160</div>
-                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
+                        <p><strong>Author:</strong> Nyamori, Bosire</p>
                     </div>
                 </div>
 
@@ -434,12 +431,12 @@
                     <div class="pub-card">
                         <div class="pub-title">Submission to the Kenyan National Treasury on the Proposed Kenya–Ireland Double Taxation Agreement.</div>
                         <div class="fst-italic text-secondary mb-2">Nairobi: National Treasury, Kenya, 2021</div>
-                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Authors:</strong> Piccioto, Sol and Bosire Nyamori</p>
+                        <p><strong>Authors:</strong> Piccioto, Sol and Bosire Nyamori</p>
                     </div>
                     <div class="pub-card">
                         <div class="pub-title">Comments on the Public Discussion Draft: Possible Changes to the UN Model Double Taxation Convention between Developed and Developing Countries Concerning the Inclusion of Software Payments in the Definition of Royalties.</div>
                         <div class="fst-italic text-secondary mb-2">Geneva: UN Committee of Experts on International Cooperation on Tax Matters, 2020</div>
-                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori, Bosire</p>
+                        <p><strong>Author:</strong> Nyamori, Bosire</p>
                     </div>
                 </div>
 
@@ -448,38 +445,36 @@
                     <div class="pub-card">
                         <div class="pub-title">How the Constitution Impacts International Tax Policy and Law in Kenya</div>
                         <div class="fst-italic text-secondary mb-2">SKJULT, Tax Justice Norge, 78-79</div>
-                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Bosire Nyamori</p>
+                        <p><strong>Author:</strong> Nyamori, Bosire</p>
                     </div>
                     <div class="pub-card">
                         <div class="pub-title">The Kenyan Parliament and Investment Treaty Making</div>
                         <div class="fst-italic text-secondary mb-2">Investment Treaty News 10, no. 2 (2019): 21-23</div>
-                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
+                        <p><strong>Author:</strong> Nyamori, Bosire</p>
                     </div>
+                     <div class="pub-card">
+                        <div class="pub-title">Implications of the Tax Procedure Act for Taxpayers’ Rights in Kenya</div>
+                        <div class="fst-italic text-secondary mb-2">The Platform 28, (2017): 54-56</div>
+                        <p><strong>Author:</strong> Nyamori, Bosire</p>
+                    </div>
+
+                    <h3 class="mb-4 text-primary" style="font-family: 'Merriweather', serif;">2.5 Case Notes and Legal Commentary</h3>
                     <div class="pub-card">
                         <div class="pub-title">Crystallising Withholding Tax Liability</div>
                         <div class="fst-italic text-secondary mb-2">Nairobi Business Monthly, July 5, 2019</div>
-                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
+                        <p><strong>Author:</strong> Nyamori, Bosire</p>
                     </div>
                     <div class="pub-card">
                         <div class="pub-title">Does Location Where Service is to be Finally Used Determine whether It Has Been Exported?</div>
                         <div class="fst-italic text-secondary mb-2">Nairobi Business Monthly, (2019)</div>
-                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
+                        <p><strong>Author:</strong> Nyamori, Bosire</p>
                     </div>
                     <div class="pub-card">
                         <div class="pub-title">Is VAT Applicable to the Sale or Purchase of Land with Commercial Buildings Standing Thereon?</div>
                         <div class="fst-italic text-secondary mb-2">Nairobi Business Monthly, (2019)</div>
-                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
+                        <p><strong>Author:</strong> Nyamori, Bosire</p>
                     </div>
-                    <div class="pub-card">
-                        <div class="pub-title">Implications of the Tax Procedure Act for Taxpayers’ Rights in Kenya</div>
-                        <div class="fst-italic text-secondary mb-2">The Platform 28, (2017): 54-56</div>
-                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Author:</strong> Nyamori Bosire</p>
-                    </div>
-                    <div class="pub-card">
-                        <div class="pub-title">Amend the Law to Impose Tax on Income from Illegal Activities</div>
-                        <div class="fst-italic text-secondary mb-2">Business Daily Newspaper, (2016)</div>
-                        <p class="mb-0 small text-uppercase tracking-wide"><strong>Authors:</strong> Nyamori, Robert and Bosire Nyamori</p>
-                    </div>
+        
                 </div>
 
                 <h3 class="mb-4 text-primary" style="font-family: 'Merriweather', serif;">2.6 Invited Talks, Conference Papers, and Academic Presentations</h3>
@@ -521,7 +516,6 @@
     </div>
     </section>
 
-
     <section id="media" class="section-padding bg-light">
         <div class="container">
             <div class="row mb-4">
@@ -553,47 +547,6 @@
                         <div class="text-muted mb-2 text-uppercase small fw-bold">Business Commentary</div>
                         <h5 class="pub-title">Expert Commentary on Tax Policy</h5>
                         <p class="mb-0 text-muted">Various contributions and mentions in <span class="fw-bold text-dark">Forbes</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="consulting" class="section-padding">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-lg-8">
-                    <h2 class="section-title">Legal and Tax Consulting</h2>
-                    <p class="lead text-muted">Expert advisory services bridging the gap between law, accounting, and public policy.</p>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3 text-center">
-                    <div class="p-4 h-100 border rounded-3 hover-shadow">
-                        <i class="bi bi-file-earmark-text consulting-icon"></i>
-                        <h5 class="fw-bold mt-3">Tax Policy Advisory</h5>
-                        <p class="small text-muted">Analysis of fiscal legislation and policy formulation for government bodies and private stakeholders.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center">
-                    <div class="p-4 h-100 border rounded-3 hover-shadow">
-                        <i class="bi bi-bank consulting-icon"></i>
-                        <h5 class="fw-bold mt-3">Legislative Drafting</h5>
-                        <p class="small text-muted">Technical support in drafting tax bills and reviewing finance acts for constitutional compliance.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center">
-                    <div class="p-4 h-100 border rounded-3 hover-shadow">
-                        <i class="bi bi-people consulting-icon"></i>
-                        <h5 class="fw-bold mt-3">Corporate Training</h5>
-                        <p class="small text-muted">Specialized training for boards and management on emerging tax trends and compliance.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center">
-                    <div class="p-4 h-100 border rounded-3 hover-shadow">
-                        <i class="bi bi-shield-check consulting-icon"></i>
-                        <h5 class="fw-bold mt-3">Dispute Resolution</h5>
-                        <p class="small text-muted">Expert opinion and litigation support for complex tax disputes and tribunal hearings.</p>
                     </div>
                 </div>
             </div>
@@ -640,30 +593,44 @@
 
     <footer id="contact">
         <div class="container">
-            <div class="row">
-                <div class="col-md-5 mb-4">
-                    <h5 class="mb-3">Kenyan Tax Matters</h5>
-                    <p class="small text-white-50">Examining topical issues relating to tax policy and the law in Kenya. <br><br> Content by Bosire Nyamori.</p>
+            <div class="row justify-content-center text-center">
+                
+                <div class="col-md-12 mb-4">
+                    <h5 class="mb-3 text-white">Wherever our clients need us, that's where we are.</h5>
+                    <p class="small text-white-50 mb-0">
+                        &copy; TaxlawinKenya. All rights reserved.
+                    </p>
                 </div>
-                <div class="col-md-3 mb-4">
-                    <h5 class="mb-3">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#about" class="text-white-50 text-decoration-none">About Me</a></li>
-                        <li class="mb-2"><a href="#publications" class="text-white-50 text-decoration-none">Publications</a></li>
-                        <li class="mb-2"><a href="#media" class="text-white-50 text-decoration-none">Media</a></li>
-                        <li class="mb-2"><a href="#consulting" class="text-white-50 text-decoration-none">Consulting</a></li>
-                    </ul>
+
+                <div class="col-md-12 mb-4">
+                    <p class="small text-white-50">
+                        Copyright &copy; 2026 Bosire Nyamori, advocate, accountant and arbitrator. All rights reserved.
+                    </p>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <h5 class="mb-3">Contact Info</h5>
-                    <p class="text-white-50"><i class="bi bi-geo-alt me-2"></i> Nairobi, Kenya</p>
-                    <p class="text-white-50"><i class="bi bi-envelope me-2"></i> contact@kenyataxlaw.com</p>
+
+                <div class="col-md-12 border-top border-secondary pt-4">
+                    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3">
+                        
+                        <div>
+                            <a href="#" class="text-white-50 text-decoration-none hover-white">Privacy Policy</a>
+                        </div>
+
+                        <div class="text-white-50 small">
+                            Website designed by: 
+                            <span class="text-white">Daniel Kiseke</span> <a href="tel:+254794255692" class="text-white-50 text-decoration-none">(+254 794 255692)</a> & 
+                            <span class="text-white">Florence Ndinda</span> <a href="tel:+254110866688" class="text-white-50 text-decoration-none">(+254 110 866 688)</a>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="text-white-50 small me-2">Follow us:</span>
+                            <a href="#" class="text-white-50 fs-5"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="text-white-50 fs-5"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="text-white-50 fs-5"><i class="bi bi-linkedin"></i></a>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <div class="row mt-4 border-top border-secondary pt-4">
-                <div class="col-12 text-center text-white-50 small">
-                    &copy; 2025 Bosire Nyamori. All Rights Reserved.
-                </div>
+
             </div>
         </div>
     </footer>
